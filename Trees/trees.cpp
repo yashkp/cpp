@@ -56,6 +56,13 @@ void InOrder(node *nd){
     InOrder(nd->right);
 }
 
+void BFS(node *nd){
+    if(nd == NULL){
+        return;
+    }
+    
+}
+
 int main(){
     node *root=new node(1);
     root->left=new node(2);
@@ -68,6 +75,8 @@ int main(){
     postOrder(root);
     cout<<endl;
     InOrder(root);
+
+    BFS(root);
 
     return 0;
 }
